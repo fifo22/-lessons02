@@ -1,0 +1,10 @@
+[Unit]
+Description=Test service
+After=network.target
+
+[Service]
+ExecStart=/root/04.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
