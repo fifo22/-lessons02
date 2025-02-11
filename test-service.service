@@ -5,6 +5,7 @@ After=network.target
 [Service]
 ExecStart=/root/04.sh
 Restart=always
+RestartSec=60
 
 [Install]
 WantedBy=multi-user.target
